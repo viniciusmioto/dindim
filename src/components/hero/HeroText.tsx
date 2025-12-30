@@ -7,7 +7,7 @@ export default function HeroText() {
     <motion.div
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.6, ease: "easeOut" }}
+      transition={{ duration: 0.4, ease: "easeOut" }}
       className="max-w-2xl lg:max-w-3xl"
     >
       <h1 className="font-display font-bold text-4xl sm:text-5xl lg:text-7xl text-foreground mb-4 sm:mb-6 leading-tight">

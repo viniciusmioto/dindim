@@ -7,7 +7,7 @@ export default function HeroCTA() {
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      transition={{ delay: 0.4, duration: 0.6 }}
+      transition={{ delay: 0.3, duration: 0.4 }}
       className="flex flex-col sm:flex-row gap-4"
     >
       <motion.button

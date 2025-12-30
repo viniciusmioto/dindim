@@ -1,0 +1,16 @@
+{
+  "home": {
+    "title": "As Aventuras de Dindim",
+    "subtitle": "Finanças pessoais sem enrolação.",
+    "cta": {
+      "subscribe": "Inscrever-se",
+      "readMore": "Ler Artigos"
+    }
+  },
+  "sections": {
+    "highlights": "Domine seu dinheiro",
+    "articles": "Últimos Artigos",
+    "videos": "Assista e Aprenda",
+    "newsletter": "Entre para o Clube Dindim"
+  }
+}

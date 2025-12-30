@@ -21,7 +21,7 @@ export default function Header() {
                 height={40}
                 className="h-10 w-auto"
               />
-              <span className="font-display font-bold text-xl hidden sm:block">
+              <span className="font-display font-bold text-xl block">
                 Dindim
               </span>
             </Link>

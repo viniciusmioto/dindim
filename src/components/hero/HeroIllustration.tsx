@@ -21,7 +21,7 @@ const rainVariant = (delay: number) => ({
   initial: { y: -10, opacity: 0 },
   animate: {
     y: [0, 10, 0],
-    opacity: [0.1, 0.3, 0.1],
+    opacity: [0.5, 0.5, 0.5],
     transition: {
       duration: 20,
       repeat: Infinity,
@@ -38,7 +38,7 @@ export default function HeroIllustration() {
       initial={{ opacity: 0, x: 20 }}
       animate={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
-      className="relative w-full h-[400px] flex justify-center items-center"
+      className="relative w-full h-[200px] lg:h-[400px] flex justify-center items-center"
     >
       {/* Background Rain of Coins/Money - Absolute positioned */}
 
@@ -46,7 +46,7 @@ export default function HeroIllustration() {
       <motion.div
         variants={floatVariant(0)}
         animate="animate"
-        className="absolute top-10 left-10 w-12 h-12 z-0 opacity-20"
+        className="absolute top-4 left-4 lg:top-10 lg:left-10 w-8 h-8 lg:w-12 lg:h-12 z-0 opacity-50"
       >
         <Image src="/assets/coin.svg" alt="Coin" width={48} height={48} />
       </motion.div>
@@ -55,7 +55,7 @@ export default function HeroIllustration() {
       <motion.div
         variants={floatVariant(1.5)}
         animate="animate"
-        className="absolute top-20 right-10 w-16 h-16 z-0 opacity-20"
+        className="absolute top-8 right-4 lg:top-20 lg:right-10 w-10 h-10 lg:w-16 lg:h-16 z-0 opacity-50"
       >
         <Image
           src="/assets/wad_of_cash.svg"
@@ -69,7 +69,7 @@ export default function HeroIllustration() {
       <motion.div
         variants={floatVariant(0.5)}
         animate="animate"
-        className="absolute bottom-20 left-20 w-10 h-10 z-0 opacity-20"
+        className="absolute bottom-8 left-8 lg:bottom-20 lg:left-20 w-6 h-6 lg:w-10 lg:h-10 z-0 opacity-50"
       >
         <Image src="/assets/coin.svg" alt="Coin" width={40} height={40} />
       </motion.div>
@@ -78,7 +78,7 @@ export default function HeroIllustration() {
       <motion.div
         variants={floatVariant(2)}
         animate="animate"
-        className="absolute bottom-10 right-20 w-14 h-14 z-0 opacity-20"
+        className="absolute bottom-4 right-8 lg:bottom-10 lg:right-20 w-9 h-9 lg:w-14 lg:h-14 z-0 opacity-50"
       >
         <Image src="/assets/coin.svg" alt="Coin" width={56} height={56} />
       </motion.div>
@@ -88,7 +88,7 @@ export default function HeroIllustration() {
         variants={rainVariant(1)}
         initial="initial"
         animate="animate"
-        className="absolute top-1/3 left-0 w-20 h-12 z-0 opacity-20"
+        className="absolute top-1/4 -left-2 lg:top-1/3 lg:left-0 w-14 h-8 lg:w-20 lg:h-12 z-0 opacity-50"
       >
         <Image
           src="/assets/banknote_money.svg"
@@ -100,7 +100,7 @@ export default function HeroIllustration() {
       </motion.div>
 
       {/* Main Character */}
-      <div className="relative w-72 h-72 sm:w-80 sm:h-80 lg:w-96 lg:h-96 z-10">
+      <div className="relative w-40 h-40 sm:w-80 sm:h-80 lg:w-96 lg:h-96 z-10">
         <Image
           src="/assets/dindim.svg"
           alt="Dindim Character"

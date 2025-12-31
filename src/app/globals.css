@@ -1,9 +1,11 @@
 @import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Comic+Relief&display=swap");
 
 :root {
   --background: #ffffff;
   --foreground: #111111;
-  --accent: #daa520;
+  --accent: #ffea00;
+  --secondary: #e3c502;
   --growth: #2e8b57;
   --card-bg: #f4f1ec;
 }
@@ -12,11 +14,48 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-accent: var(--accent);
+  --color-secondary: var(--secondary);
   --color-growth: var(--growth);
   --color-card: var(--card-bg);
 
-  --font-display: var(--font-comic-neue);
-  --font-body: var(--font-inter);
+  --font-display: "Comic Relief", cursive;
+  --font-body: var(--font-body);
+}
+
+@layer utilities {
+  .comic-border {
+    border: 3px solid #000;
+  }
+
+  .comic-shadow {
+    box-shadow: 4px 4px 0px 0px #000000;
+  }
+
+  .comic-shadow-sm {
+    box-shadow: 2px 2px 0px 0px #000000;
+  }
+
+  .comic-button {
+    border: 3px solid #000;
+    box-shadow: 4px 4px 0px 0px #000000;
+    transition: all 0.2s;
+  }
+
+  .comic-button:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 6px 6px 0px 0px #000000;
+  }
+
+  .comic-button:active {
+    transform: translate(0px, 0px);
+    box-shadow: 2px 2px 0px 0px #000000;
+  }
+
+  .comic-box {
+    background-color: white;
+    border: 3px solid #000;
+    box-shadow: 4px 4px 0px 0px #000000;
+  }
 }
 
 body {

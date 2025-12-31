@@ -31,7 +31,7 @@ const articles = [
 
 export default function LatestArticles() {
   return (
-    <section className="bg-background border-b border-stroke py-16">
+    <section className="bg-background border-b-2 border-black py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center mb-10">
           <h2 className="font-display font-bold text-3xl md:text-4xl">
@@ -39,7 +39,7 @@ export default function LatestArticles() {
           </h2>
           <Link
             href="/articles"
-            className="text-accent font-bold hover:underline"
+            className="text-black font-bold border-b-4 border-accent hover:bg-accent transition-colors px-1"
           >
             Ler todos artigos →
           </Link>
@@ -48,18 +48,20 @@ export default function LatestArticles() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {articles.map((article) => (
             <article key={article.id} className="group cursor-pointer">
-              <div className="aspect-[4/3] bg-card-bg rounded-xl border-2 border-stroke mb-4 relative overflow-hidden transition-transform group-hover:scale-[1.02]">
+              <div className="aspect-[4/3] bg-card-bg comic-box comic-border mb-4 relative overflow-hidden transition-transform group-hover:-translate-y-1">
                 <div className="absolute inset-0 flex items-center justify-center text-gray-400">
                   {/* Image Placeholder */}
                   <span className="font-display">Imagem de Capa</span>
                 </div>
               </div>
               <div className="flex items-center gap-3 text-sm text-gray-500 mb-2">
-                <span className="font-bold text-accent">{article.tag}</span>
+                <span className="font-bold text-black bg-accent px-2 py-0.5 rounded-sm border border-black text-xs">
+                  {article.tag}
+                </span>
                 <span>•</span>
                 <span>{article.readTime}</span>
               </div>
-              <h3 className="font-display font-bold text-xl mb-2 group-hover:text-accent transition-colors">
+              <h3 className="font-display font-bold text-xl mb-2 group-hover:text-black group-hover:bg-accent inline-block transition-colors">
                 {article.title}
               </h3>
               <p className="text-gray-600 line-clamp-2">{article.excerpt}</p>

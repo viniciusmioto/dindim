@@ -1,12 +1,15 @@
 export default function VideoBlock() {
   return (
-    <section className="bg-background border-b border-stroke py-16">
+    <section className="bg-background border-b-2 border-black py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center mb-8">
           <h2 className="font-display font-bold text-3xl md:text-4xl">
             Assista e Aprenda
           </h2>
-          <a href="/videos" className="text-accent font-bold hover:underline">
+          <a
+            href="/videos"
+            className="text-black font-bold border-b-4 border-accent hover:bg-accent transition-colors px-1"
+          >
             Ver todos vídeos →
           </a>
         </div>
@@ -14,7 +17,7 @@ export default function VideoBlock() {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {/* Main Video */}
           <div className="lg:col-span-2">
-            <div className="aspect-video bg-black rounded-xl overflow-hidden border-2 border-stroke shadow-sm relative">
+            <div className="aspect-video bg-black comic-border shadow-[6px_6px_0px_0px_#000] overflow-hidden relative">
               {/* Placeholder for YouTube Embed */}
               <div className="absolute inset-0 flex items-center justify-center text-white">
                 <span className="font-display text-xl">Vídeo em Destaque</span>
@@ -37,14 +40,14 @@ export default function VideoBlock() {
                 key={i}
                 className="flex gap-4 items-center group cursor-pointer"
               >
-                <div className="w-24 h-40 bg-gray-200 rounded-lg border border-stroke flex-shrink-0 relative overflow-hidden">
+                <div className="w-24 h-40 bg-gray-200 comic-border flex-shrink-0 relative overflow-hidden">
                   {/* Placeholder */}
                   <div className="absolute inset-0 flex items-center justify-center text-gray-400 text-xs">
                     Short {i}
                   </div>
                 </div>
                 <div>
-                  <h4 className="font-bold group-hover:text-accent transition-colors">
+                  <h4 className="font-bold group-hover:bg-accent inline-block transition-colors px-1">
                     Dica de Ouro #{i}
                   </h4>
                   <p className="text-sm text-gray-500">15k visualizações</p>

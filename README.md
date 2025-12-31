@@ -1,6 +1,6 @@
-# The Adventures of Dindim
+# Meu Dindim
 
-The homepage for "The Adventures of Dindim" blog — Personal finance without the nonsense.
+The homepage for "Meu Dindim" blog — Personal finance without the nonsense.
 
 ## Key Features
 

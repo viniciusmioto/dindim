@@ -20,7 +20,10 @@ export default function Footer() {
 
           {/* Links */}
           <div className="flex gap-8 text-sm font-bold text-gray-600">
-            <Link href="/terms" className="hover:text-accent">
+            <Link
+              href="/terms"
+              className="hover:bg-accent hover:text-black transition-colors px-1"
+            >
               Termos
             </Link>
             <Link href="/privacy" className="hover:text-accent">
@@ -34,13 +37,13 @@ export default function Footer() {
           {/* Socials (Placeholder) */}
           <div className="flex gap-4">
             {/* Simple circles for social icons */}
-            <div className="w-8 h-8 rounded-full bg-stroke flex items-center justify-center text-white text-xs hover:bg-accent cursor-pointer transition-colors">
+            <div className="w-8 h-8 rounded-full bg-secondary flex items-center justify-center text-white text-xs hover:bg-accent cursor-pointer transition-colors border-2 border-black">
               IG
             </div>
-            <div className="w-8 h-8 rounded-full bg-stroke flex items-center justify-center text-white text-xs hover:bg-accent cursor-pointer transition-colors">
+            <div className="w-8 h-8 rounded-full bg-secondary flex items-center justify-center text-white text-xs hover:bg-accent cursor-pointer transition-colors border-2 border-black">
               YT
             </div>
-            <div className="w-8 h-8 rounded-full bg-stroke flex items-center justify-center text-white text-xs hover:bg-accent cursor-pointer transition-colors">
+            <div className="w-8 h-8 rounded-full bg-secondary flex items-center justify-center text-white text-xs hover:bg-accent cursor-pointer transition-colors border-2 border-black">
               X
             </div>
           </div>

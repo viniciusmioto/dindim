@@ -8,7 +8,7 @@ export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="w-full border-b border-stroke bg-background sticky top-0 z-50">
+    <header className="w-full border-b-2 border-black bg-background sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
@@ -31,29 +31,29 @@ export default function Header() {
           <nav className="hidden md:flex space-x-8 items-center">
             <Link
               href="/"
-              className="text-foreground hover:text-accent font-medium transition-colors"
+              className="text-foreground hover:text-accent hover:border-b-2 hover:border-accent font-medium transition-all"
             >
               Início
             </Link>
             <Link
               href="/articles"
-              className="text-foreground hover:text-accent font-medium transition-colors"
+              className="text-foreground hover:text-accent hover:border-b-2 hover:border-accent font-medium transition-all"
             >
               Artigos
             </Link>
             <Link
               href="/videos"
-              className="text-foreground hover:text-accent font-medium transition-colors"
+              className="text-foreground hover:text-accent hover:border-b-2 hover:border-accent font-medium transition-all"
             >
               Vídeos
             </Link>
             <Link
               href="/about"
-              className="text-foreground hover:text-accent font-medium transition-colors"
+              className="text-foreground hover:text-accent hover:border-b-2 hover:border-accent font-medium transition-all"
             >
               Sobre
             </Link>
-            <button className="bg-accent text-white px-6 py-2 rounded-full font-bold shadow-sm hover:opacity-90 transition-opacity">
+            <button className="bg-accent text-black px-6 py-2 rounded-lg font-display font-bold uppercase tracking-wide comic-button">
               Inscrever-se
             </button>
           </nav>
@@ -122,9 +122,11 @@ export default function Header() {
               Sobre
             </Link>
             <div className="mt-4 px-3">
-              <button className="w-full bg-accent text-white px-6 py-2 rounded-full font-bold shadow-sm hover:opacity-90 transition-opacity">
-                Inscrever-se
-              </button>
+              <div className="mt-4 px-3">
+                <button className="w-full bg-accent text-black px-6 py-2 rounded-lg font-display font-bold uppercase tracking-wide comic-button">
+                  Inscrever-se
+                </button>
+              </div>
             </div>
           </div>
         </div>
